@@ -1,0 +1,30 @@
+[package]
+name = "rbx-acc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "rbx_acc_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rbx-acc"
+path = "src/bin.rs"
+
+[dependencies]
+clap = { version = "4.4.7", features = ["derive"] }
+colored = "2.0.4"
+dialoguer = "0.11.0"
+dirs = "5.0.1"
+file = "1.1.2"
+headless_chrome = "1.0.7"
+indicatif = "0.17.7"
+open = "5.0.0"
+reqwest = { version = "0.11.22", features = ["json"] }
+select = "0.6.0"
+serde = { version = "1.0.190", features = ["derive"] }
+serde_json = "1.0.108"
+tokio = { version = "1.33.0", features = ["full"] }
+urlencoding = "2.1.3"
