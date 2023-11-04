@@ -1,2 +1,2 @@
 # rbx-acc
-A command line alternative to Roblox Account Manager
+A linux-friendly account manager for Roblox
